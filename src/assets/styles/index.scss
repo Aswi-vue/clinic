@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Import PrimeVue theme
+@import "primevue/resources/themes/mdc-light-deeppurple/theme.css";
+
+// Import PrimeIcons
+@import "primeicons/primeicons.css";
