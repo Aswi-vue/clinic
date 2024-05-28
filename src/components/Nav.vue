@@ -1,8 +1,8 @@
 <template>
   <header>
-    <h1>CLINIC</h1>
+    <img src="@/assets/main-logo.png" alt="">
     <div class="card">
-      <Menubar :model="menu">
+      <Menubar :model="menu" breakpoint="1030px">
         <template #item="{ item, props, hasSubmenu }">
           <router-link
             v-if="item.route"
@@ -11,7 +11,6 @@
             custom
           >
             <a v-ripple :href="href" v-bind="props.action" @click="navigate">
-              <span :class="item.icon" />
               <span class="ml-2">{{ item.label }}</span>
             </a>
           </router-link>
@@ -22,7 +21,6 @@
             :target="item.target"
             v-bind="props.action"
           >
-            <span :class="item.icon" />
             <span class="ml-2">{{ item.label }}</span>
             <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down ml-2" />
           </a>
@@ -97,13 +95,16 @@ const menu = ref([
 </script>
 
 <style>
-h1 {
-  color: black !important;
-}
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
+}
+header>div{
+  min-width: 12rem !important;
+}
+header>img{
+  padding: 10px;
 }
 </style>

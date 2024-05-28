@@ -2,7 +2,9 @@ import { createApp } from "vue";
 import router from "./router";
 //PRIMEVUE
 import PrimeVue from "primevue/config";
-import "primevue/resources/themes/aura-light-green/theme.css";
+import "primevue/resources/themes/mdc-light-deeppurple/theme.css";
+import "primeicons/primeicons.css";
+
 import Sidebar from "primevue/sidebar";
 import Button from "primevue/button";
 import Menubar from "primevue/menubar";
