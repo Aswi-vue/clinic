@@ -3,7 +3,7 @@
     <img src="@/assets/product-features.png" alt="product-features" />
 
     <section>
-      <h1>Product Features</h1>
+      <h1 class="header-blue">Product Features</h1>
 
       <aside>
         <article>
@@ -52,22 +52,8 @@
   align-items: center;
   padding: 1rem;
 }
-.product-features>img{
-    padding: 2rem 0;
-}
-.product-features h1{
-    position: relative;
-    font-weight: normal;
-}
-.product-features h1::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 22rem;
-  left: 32%;
-  height: 3px;
-  background-color: lightblue;
-  margin-left: 0;
+.product-features > img {
+  padding: 2rem 0;
 }
 .product-features section {
   display: flex;
@@ -83,5 +69,6 @@
 }
 .product-features section article i {
   font-size: 30px;
+  color: slateblue;
 }
 </style>

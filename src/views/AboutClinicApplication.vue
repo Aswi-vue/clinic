@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 <template>
   <main class="about-clinic-application">
     <section>

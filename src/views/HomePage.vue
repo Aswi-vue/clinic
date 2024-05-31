@@ -22,6 +22,7 @@
     <KBCinc />
     <BenefitsOfClinicVue />
     <MoreBenefitsVue/>
+    <FAQVue/>
 
   </main>
 </template>
@@ -34,6 +35,7 @@ import KeyFeatureOfClinicVue from "./KeyFeatureOfClinic.vue";
 import KBCinc from "./KBCinc.vue";
 import BenefitsOfClinicVue from "./BenefitsOfClinic.vue";
 import MoreBenefitsVue from "./MoreBenefits.vue";
+import FAQVue from "@/FAQ.vue";
 </script>
 
 <style scoped>

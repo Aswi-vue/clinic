@@ -1,6 +1,6 @@
 <template>
   <main class="about-page">
-    <h1>ABOUT US</h1>
+    <h1 class="header-blue">ABOUT US</h1>
 
     <section>
       <img src="@/assets/about-img.jpg" alt="" />
@@ -62,21 +62,6 @@
   padding-bottom: 4rem;
   background-color: #eff5f5;
 }
-.about-page > h1 {
-  position: relative;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-.about-page > h1::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 15rem;
-  left: 42%;
-  height: 3px;
-  background-color: lightblue;
-  margin-left: 0;
-}
 .about-page section {
   display: flex;
   justify-content: center;
@@ -94,7 +79,6 @@
 .about-page h1 {
   font-size: 30px;
   font-weight: normal;
-  
 }
 .about-page ul {
   display: flex;

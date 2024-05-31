@@ -6,25 +6,24 @@
 
       <ul>
         <li>
-          <i class="pi pi-desktop"></i>
-          Accessibility to your documents from anywhere at the click.
+          <img src="@/assets/window-dock.svg" alt="" /> Accessibility to your
+          documents from anywhere at the click.
         </li>
         <li>
-          <i class="pi pi-desktop"></i>
-          Digitize your workspace and scale up productivity.
+          <img src="@/assets/mouse2.svg" alt="" /> Digitize your workspace and
+          scale up productivity.
         </li>
         <li>
-          <i class="pi pi-desktop"></i>
-
+          <img src="@/assets/bar-chart.svg" alt="" />
           Expedite the assessments with automated scores & interpretation.
         </li>
         <li>
-          <i class="pi pi-desktop"></i>
-          Efficiently track the appointment records which helps you to schedule
-          and manage time productively.
+          <img src="@/assets/calendar-week-fill.svg" alt="" /> Efficiently track
+          the appointment records which helps you to schedule and manage time
+          productively.
         </li>
         <li>
-          <i class="pi pi-desktop"></i>
+        <img src="@/assets/stickies-fill.svg" alt="" />
           Send a reports and reminder message.
         </li>
       </ul>
@@ -55,5 +54,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.key-features-clinic ul li img {
+  width: 35px;
 }
 </style>
