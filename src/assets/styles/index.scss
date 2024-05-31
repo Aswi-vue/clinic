@@ -1,11 +1,32 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+.header-blue {
+  position: relative;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
 
-// Import PrimeVue theme
-@import "primevue/resources/themes/mdc-light-deeppurple/theme.css";
-
-// Import PrimeIcons
-@import "primeicons/primeicons.css";
+.header-blue::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 15rem;
+  left: 50%; 
+  transform: translateX(-50%);
+  height: 3px;
+  background: linear-gradient(0deg, #1dc8cd 0%, #9bcdf4 100%);
+  margin-left: 0;
+}

@@ -1,76 +1,71 @@
 <template>
   <main class="more-benefits">
-    <h1>More Benefits</h1>
+    <h1 class="header-blue">{{ jsonData.headerText }}</h1>
 
-    <em>What are the benefits Psychologists can get</em>
+    <em>{{ jsonData.subheaderText }}</em>
 
     <section>
-      <article>
-        <span class="pi pi-list-check"></span>
+      <article v-for="(item, index) in jsonData.benefits" :key="index">
+        <img :src="getImageUrl(item.imageSrc)" alt="" />
         <div>
-          <h3>Dedicated Proforma</h3>
+          <h3>{{ item.title }}</h3>
           <p>
-            Dedicated performa based on CIP or NIMHANS to document & organize
-            client details.
-          </p>
-        </div>
-      </article>
-      <article>
-        <span class="pi pi-list-check"></span>
-        <div>
-          <h3>Dedicated Proforma</h3>
-          <p>
-            Dedicated performa based on CIP or NIMHANS to document & organize
-            client details.
-          </p>
-        </div>
-      </article>
-      <article>
-        <span class="pi pi-list-check"></span>
-        <div>
-          <h3>Dedicated Proforma</h3>
-          <p>
-            Dedicated performa based on CIP or NIMHANS to document & organize
-            client details.
-          </p>
-        </div>
-      </article>
-      <article>
-        <span class="pi pi-list-check"></span>
-        <div>
-          <h3>Dedicated Proforma</h3>
-          <p>
-            Dedicated performa based on CIP or NIMHANS to document & organize
-            client details.
+            {{ item.description }}
           </p>
         </div>
       </article>
     </section>
+    <p class="header-blue">
+      {{ jsonData.footerText }}
+    </p>
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import data from "./moreBenefits.json";
+import cardChecklist from "@/assets/card-checklist.svg";
+import personBoundingBox from "@/assets/person-bounding-box.svg";
+import diagram from "@/assets/diagram.svg";
+import grid from "@/assets/grid.svg";
+
+const jsonData = ref(data);
+const getImageUrl = (imageName) => {
+  switch (imageName) {
+    case "card-checklist":
+      return cardChecklist;
+    case "person-bounding-box":
+      return personBoundingBox;
+    case "diagram":
+      return diagram;
+    case "grid":
+      return grid;
+    default:
+      return "";
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .more-benefits {
-}
-*{
-    border: 1px solid red;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eff5f5;
 }
 .more-benefits section {
-    width: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-evenly;
   padding: 2rem;
+  gap: 1rem;
 }
 .more-benefits section article {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  width: 80%;
   height: 10rem;
   padding: 1rem;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -79,8 +74,13 @@
 .more-benefits section article div {
   width: 70%;
 }
-.more-benefits section article span{
-    font-size: 40px;
-    color: slateblue;
+.more-benefits section article img {
+  font-size: 40px;
+  color: slateblue;
+  width: 100px;
+}
+.more-benefits > p {
+  margin-top: 4rem;
+  font-size: 28px;
 }
 </style>

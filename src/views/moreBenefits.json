@@ -1,0 +1,37 @@
+{
+  "headerText": "More Benefits",
+  "subheaderText": "What are the benefits Psychologists can get",
+  "benefits": [
+    {
+      "imageSrc": "card-checklist",
+      "title": "Dedicated Proforma",
+      "description": "Dedicated performa based on CIP or NIMHANS to document & organize client details."
+    },
+    {
+      "imageSrc": "card-checklist",
+      "title": "Dedicated Proforma",
+      "description": "Dedicated performa based on CIP or NIMHANS to document & organize client details."
+    },
+    {
+      "imageSrc": "card-checklist",
+      "title": "Dedicated Proforma",
+      "description": "Dedicated performa based on CIP or NIMHANS to document & organize client details."
+    },
+    {
+      "imageSrc": "person-bounding-box",
+      "title": "Seamless Management",
+      "description": "Seamless management of client records with enhanced data security."
+    },
+    {
+      "imageSrc": "diagram",
+      "title": "Dedicated Proforma",
+      "description": "Dedicated performa based on CIP or NIMHANS to document & organize client details."
+    },
+    {
+      "imageSrc": "grid",
+      "title": "Dedicated Proforma",
+      "description": "Dedicated performa based on CIP or NIMHANS to document & organize client details."
+    }
+  ],
+  "footerText": "@Clinic is designed for Mental Health Professionals such as Psychologists, Clinical Psychologists, Counsellors, Psychiatrists, Speech Therapist and Occupational Therapists"
+}
